@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2020_01_13_153411) do
     t.index ["todo_id"], name: "index_items_on_todo_id"
   end
 
-  create_table "lists", force: :cascade do |t|
+  create_table "todos", force: :cascade do |t|
     t.string "title"
     t.string "created_by"
     t.datetime "created_at", precision: 6, null: false
